@@ -11,10 +11,12 @@ import type { CompressOption } from "./engines/ImageBase";
  */
 export function normalize(pathname: string, base = import.meta.env.BASE_URL) {
   // Ensure starts with '/'
+  // debugger;
   pathname = "/" + pathname.replace(/^\/*/, "");
   base = "/" + base.replace(/^\/*/, "");
-  if (!pathname.startsWith(base)) return "error404";
-  return pathname.substring(base.length).replace(/^\/*|\/*$/g, "");
+  // if (!pathname.startsWith(base)) return "error404";
+  let arrs = pathname.split("\/")
+  return arrs[arrs.length - 1]
 }
 
 /**

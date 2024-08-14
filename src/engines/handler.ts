@@ -8,7 +8,7 @@ import { GifImage } from "./GifImage";
 import { CanvasImage } from "./CanvasImage";
 import { PngImage } from "./PngImage";
 import { AvifImage } from "./AvifImage";
-import { Mimes } from "@/mimes";
+import { Mimes } from "../mimes";
 import { SvgImage } from "./SvgImage";
 import { getSvgDimension } from "./svgParse";
 
@@ -42,7 +42,7 @@ export async function convert(
     let dimension = { width: 0, height: 0 };
     try {
       dimension = getSvgDimension(svgData);
-    } catch (error) {}
+    } catch (error) { }
     data.info.width = dimension.width;
     data.info.height = dimension.height;
 

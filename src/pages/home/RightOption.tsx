@@ -6,11 +6,11 @@ import {
   ExclamationCircleOutlined,
   ReloadOutlined,
 } from "@ant-design/icons";
-import { gstate } from "@/global";
-import { CompressOption } from "@/components/CompressOption";
-import { DefaultCompressOption, homeState } from "@/states/home";
+import { gstate } from "../../global";
+import { CompressOption } from "../../components/CompressOption";
+import { DefaultCompressOption, homeState } from "../../states/home";
 import { toJS } from "mobx";
-import { useResponse } from "@/media";
+import { useResponse } from "../../media";
 import classNames from "classnames";
 
 export const RightOption = observer(() => {

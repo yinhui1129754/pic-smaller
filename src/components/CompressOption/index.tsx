@@ -9,10 +9,10 @@ import {
 } from "antd";
 import style from "./index.module.scss";
 import { observer } from "mobx-react-lite";
-import { DefaultCompressOption, homeState } from "@/states/home";
-import { gstate } from "@/global";
+import { DefaultCompressOption, homeState } from "../../states/home";
+import { gstate } from "../../global";
 import { OptionItem } from "../OptionItem";
-import { Mimes } from "@/mimes";
+import { Mimes } from "../../mimes";
 
 export const CompressOption = observer(() => {
   const disabled = homeState.hasTaskRunning();

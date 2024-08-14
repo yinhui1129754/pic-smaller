@@ -1,5 +1,5 @@
-import { CompressOption, ProcessOutput } from "@/engines/ImageBase";
-import { createCompressTask } from "@/engines/transform";
+import { CompressOption, ProcessOutput } from "../engines/ImageBase";
+import { createCompressTask } from "../engines/transform";
 import { makeAutoObservable } from "mobx";
 
 export const DefaultCompressOption: CompressOption = {

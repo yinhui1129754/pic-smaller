@@ -2,7 +2,7 @@ import { ConfigProvider, App as AntApp } from "antd";
 import { observer } from "mobx-react-lite";
 import { gstate } from "./global";
 import { ContextAction } from "./ContextAction";
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
 import { Loading } from "./components/Loading";
 import { useResponse } from "./media";
 import { useEffect } from "react";
@@ -36,7 +36,7 @@ export const App = observer(() => {
       <AntApp>
         <ContextAction />
       </AntApp>
-      {import.meta.env.MODE === "production" && <Analytics />}
+      {/* {import.meta.env.MODE === "production" && <Analytics />} */}
       {gstate.page}
       {gstate.loading && <Loading />}
     </ConfigProvider>

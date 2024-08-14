@@ -1,6 +1,6 @@
 // 台湾繁体
 
-import { LocaleData } from "@/type";
+import { LocaleData } from "../type";
 import zhTW from "antd/locale/zh_TW";
 
 const localeData: LocaleData = {

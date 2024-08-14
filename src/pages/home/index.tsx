@@ -1,16 +1,16 @@
 import { Button, Divider, Dropdown, Flex, Space, Typography } from "antd";
 import style from "./index.module.scss";
 import { observer } from "mobx-react-lite";
-import { Logo } from "@/components/Logo";
+import { Logo } from "../../components/Logo";
 import { GithubOutlined, MenuOutlined } from "@ant-design/icons";
-import { gstate } from "@/global";
-import { changeLang, langList } from "@/locale";
-import { homeState } from "@/states/home";
-import { wait } from "@/functions";
-import { UploadCard } from "@/components/UploadCard";
-import { useWorkerHandler } from "@/engines/transform";
-import { Compare } from "@/components/Compare";
-import { useResponse } from "@/media";
+import { gstate } from "../../global";
+import { changeLang, langList } from "../../locale";
+import { homeState } from "../../states/home";
+import { wait } from "../../functions";
+import { UploadCard } from "../../components/UploadCard";
+import { useWorkerHandler } from "../../engines/transform";
+import { Compare } from "../../components/Compare";
+import { useResponse } from "../../media";
 import { RightOption } from "./RightOption";
 import { LeftContent } from "./LeftContent";
 

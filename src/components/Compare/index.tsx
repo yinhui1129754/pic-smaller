@@ -3,10 +3,10 @@ import style from "./index.module.scss";
 import { Button, Flex, Popover, Space } from "antd";
 import { CloseOutlined, QuestionCircleOutlined } from "@ant-design/icons";
 import { createPortal } from "react-dom";
-import { ImageItem, homeState } from "@/states/home";
+import { ImageItem, homeState } from "../../states/home";
 import { observer } from "mobx-react-lite";
 import classNames from "classnames";
-import { gstate } from "@/global";
+import { gstate } from "../../global";
 
 export interface CompareState {
   x: number;

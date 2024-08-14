@@ -1,12 +1,12 @@
 import WorkerC from "./WorkerCompress?worker";
 import WorkerP from "./WorkerPreview?worker";
 import { useEffect } from "react";
-import { uniqId } from "@/functions";
+import { uniqId } from "../functions";
 import { toJS } from "mobx";
-import { ImageItem, homeState } from "@/states/home";
+import { ImageItem, homeState } from "../states/home";
 import { CompressOption, Dimension, ImageInfo } from "./ImageBase";
 import { OutputMessageData } from "./handler";
-import { Mimes } from "@/mimes";
+import { Mimes } from "../mimes";
 import { svgConvert } from "./svgConvert";
 
 export interface MessageData {

@@ -1,4 +1,4 @@
-import { Mimes } from "@/mimes";
+import { Mimes } from "../mimes";
 
 const MimeAvif = "image/avif";
 

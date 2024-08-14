@@ -3,13 +3,13 @@ import style from "./index.module.scss";
 import { useEffect, useRef } from "react";
 import classNames from "classnames";
 import { observer } from "mobx-react-lite";
-import { gstate } from "@/global";
+import { gstate } from "../../global";
 import { ImageInput } from "../ImageInput";
 import { state } from "./state";
-import { createImageList } from "@/engines/transform";
-import { getFilesFromEntry, getFilesFromHandle } from "@/functions";
+import { createImageList } from "../../engines/transform";
+import { getFilesFromEntry, getFilesFromHandle } from "../../functions";
 import { sprintf } from "sprintf-js";
-import { Mimes } from "@/mimes";
+import { Mimes } from "../../mimes";
 
 export const UploadCard = observer(() => {
   const { token } = theme.useToken();

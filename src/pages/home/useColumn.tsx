@@ -8,11 +8,11 @@ import {
   DeleteOutlined,
   DownloadOutlined,
 } from "@ant-design/icons";
-import { gstate } from "@/global";
-import { ImageItem, homeState } from "@/states/home";
-import { Indicator } from "@/components/Indicator";
-import { createDownload, formatSize, getOutputFileName } from "@/functions";
-import { useResponse } from "@/media";
+import { gstate } from "../../global";
+import { ImageItem, homeState } from "../../states/home";
+import { Indicator } from "../../components/Indicator";
+import { createDownload, formatSize, getOutputFileName } from "../../functions";
+import { useResponse } from "../../media";
 
 export function useColumn(disabled: boolean) {
   const { token } = theme.useToken();

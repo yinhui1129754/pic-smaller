@@ -1,4 +1,4 @@
-import { LocaleData } from "@/type";
+import { LocaleData } from "../type";
 import zhCN from "antd/locale/zh_CN";
 
 const localeData: LocaleData = {

@@ -9,19 +9,19 @@ import {
   ReloadOutlined,
 } from "@ant-design/icons";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ImageInput } from "@/components/ImageInput";
-import { gstate } from "@/global";
-import { homeState } from "@/states/home";
+import { ImageInput } from "../../components/ImageInput";
+import { gstate } from "../../global";
+import { homeState } from "../../states/home";
 import {
   createDownload,
   getFilesFromHandle,
   getOutputFileName,
   getUniqNameOnNames,
-} from "@/functions";
-import { ProgressHint } from "@/components/ProgressHint";
-import { createImageList } from "@/engines/transform";
+} from "../../functions";
+import { ProgressHint } from "../../components/ProgressHint";
+import { createImageList } from "../../engines/transform";
 import { useColumn } from "./useColumn";
-import { useResponse } from "@/media";
+import { useResponse } from "../../media";
 
 export const LeftContent = observer(() => {
   const { isMobile } = useResponse();

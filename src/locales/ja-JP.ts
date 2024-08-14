@@ -1,6 +1,6 @@
 // 日语
 
-import { LocaleData } from "@/type";
+import { LocaleData } from "../type";
 import jaJP from "antd/locale/ja_JP";
 
 const localeData: LocaleData = {

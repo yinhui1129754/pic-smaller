@@ -1,15 +1,15 @@
-import { goto } from "@/router";
+import { goto } from "../../router";
 import style from "./index.module.scss";
 import { Button, Flex, Result } from "antd";
 import { observer } from "mobx-react-lite";
-import { gstate } from "@/global";
+import { gstate } from "../../global";
 
 const Error404 = observer(() => {
   const backToHome = (
     <Button
       type="primary"
       onClick={() => {
-        goto("/", null, "replace");
+        goto("/home", null, "replace");
       }}
     >
       {gstate.locale?.error404.backHome}

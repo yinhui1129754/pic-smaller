@@ -1,6 +1,6 @@
 // 韩语
 
-import { LocaleData } from "@/type";
+import { LocaleData } from "../type";
 import koKR from "antd/locale/ko_KR";
 
 const localeData: LocaleData = {

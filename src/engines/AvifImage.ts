@@ -3,7 +3,7 @@
  * https://github.com/packurl/wasm_avif
  */
 
-import { Mimes } from "@/mimes";
+import { Mimes } from "../mimes";
 import { avif } from "./AvifWasmModule";
 import { ImageBase, ProcessOutput } from "./ImageBase";
 

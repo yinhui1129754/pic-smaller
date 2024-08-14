@@ -1,11 +1,11 @@
 import { observer } from "mobx-react-lite";
 import style from "./index.module.scss";
 import { Flex, Progress, Typography } from "antd";
-import { gstate } from "@/global";
+import { gstate } from "../../global";
 import { ArrowDownOutlined, ArrowUpOutlined } from "@ant-design/icons";
-import { homeState } from "@/states/home";
-import { formatSize } from "@/functions";
-import { useResponse } from "@/media";
+import { homeState } from "../../states/home";
+import { formatSize } from "../../functions";
+import { useResponse } from "../../media";
 
 export const ProgressHint = observer(() => {
   const info = homeState.getProgressHintInfo();

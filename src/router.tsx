@@ -47,16 +47,17 @@ export function initRouter() {
 
 async function handleRouteChange(pathname: string) {
   gstate.pathname = normalize(pathname) || "home";
+  console.log(gstate.pathname)
   gstate.page = await loadPageComponent(gstate.pathname);
 }
 
 async function loadPageComponent(pathname: string) {
   try {
-    const importer = modules[`/src/pages/${pathname}/index.tsx`]();
+    const importer = modules[`./pages/${pathname}/index.tsx`]();
     const result = await importer;
     return <result.default />;
   } catch (error) {
-    const error404 = await import(`@/pages/error404/index.tsx`);
+    const error404 = await import(`./pages/error404/index.tsx`);
     return <error404.default />;
   }
 }

@@ -1,7 +1,7 @@
-import { homeState } from "@/states/home";
+import { homeState } from "../states/home";
 import { ProcessOutput } from "./ImageBase";
 import { AvifImage } from "./AvifImage";
-import { Mimes } from "@/mimes";
+import { Mimes } from "../mimes";
 
 /**
  * Convert SVG type to other, SVG convert can't do in worker
